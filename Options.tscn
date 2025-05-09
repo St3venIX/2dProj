@@ -1,15 +1,64 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=32 format=2]
 
 [ext_resource path="res://Options.gd" type="Script" id=1]
+[ext_resource path="res://Starbim.otf" type="DynamicFontData" id=2]
+[ext_resource path="res://idlepngs/frame_06_delay-0.1s.png" type="Texture" id=3]
+[ext_resource path="res://idlepngs/frame_09_delay-0.1s.png" type="Texture" id=4]
+[ext_resource path="res://idlepngs/frame_07_delay-0.1s.png" type="Texture" id=5]
+[ext_resource path="res://idlepngs/frame_10_delay-0.1s.png" type="Texture" id=6]
+[ext_resource path="res://idlepngs/frame_19_delay-0.1s.png" type="Texture" id=7]
+[ext_resource path="res://idlepngs/frame_17_delay-0.1s.png" type="Texture" id=8]
+[ext_resource path="res://idlepngs/frame_01_delay-0.1s.png" type="Texture" id=9]
+[ext_resource path="res://idlepngs/frame_14_delay-0.1s.png" type="Texture" id=10]
+[ext_resource path="res://idlepngs/frame_15_delay-0.1s.png" type="Texture" id=11]
+[ext_resource path="res://idlepngs/frame_12_delay-0.1s.png" type="Texture" id=12]
+[ext_resource path="res://idlepngs/frame_03_delay-0.1s.png" type="Texture" id=13]
+[ext_resource path="res://idlepngs/frame_11_delay-0.1s.png" type="Texture" id=14]
+[ext_resource path="res://idlepngs/frame_05_delay-0.1s.png" type="Texture" id=15]
+[ext_resource path="res://idlepngs/frame_04_delay-0.1s.png" type="Texture" id=16]
+[ext_resource path="res://idlepngs/frame_08_delay-0.1s.png" type="Texture" id=17]
+[ext_resource path="res://idlepngs/frame_00_delay-0.1s.png" type="Texture" id=18]
+[ext_resource path="res://idlepngs/frame_02_delay-0.1s.png" type="Texture" id=19]
+[ext_resource path="res://idlepngs/frame_16_delay-0.1s.png" type="Texture" id=20]
+[ext_resource path="res://idlepngs/frame_13_delay-0.1s.png" type="Texture" id=21]
+[ext_resource path="res://idlepngs/frame_18_delay-0.1s.png" type="Texture" id=22]
+[ext_resource path="res://arrow2.png" type="Texture" id=23]
 
 [sub_resource type="Theme" id=1]
 
 [sub_resource type="StyleBoxFlat" id=2]
 bg_color = Color( 0.603922, 0.584314, 0.584314, 1 )
 
+[sub_resource type="SpriteFrames" id=3]
+animations = [ {
+"frames": [ ExtResource( 18 ), ExtResource( 9 ), ExtResource( 19 ), ExtResource( 13 ), ExtResource( 16 ), ExtResource( 15 ), ExtResource( 3 ), ExtResource( 5 ), ExtResource( 17 ), ExtResource( 4 ), ExtResource( 6 ), ExtResource( 14 ), ExtResource( 12 ), ExtResource( 21 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 20 ), ExtResource( 8 ), ExtResource( 22 ), ExtResource( 7 ) ],
+"loop": true,
+"name": "optionidol",
+"speed": 10.0
+} ]
+
+[sub_resource type="DynamicFont" id=4]
+size = 37
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 26
+font_data = ExtResource( 2 )
+
+[sub_resource type="StyleBoxFlat" id=6]
+draw_center = false
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id=7]
+draw_center = false
+
+[sub_resource type="StyleBoxFlat" id=8]
+draw_center = false
+
 [node name="Options" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_right = 1.0
 script = ExtResource( 1 )
 
 [node name="Panel" type="Panel" parent="."]
@@ -17,3 +66,49 @@ margin_right = 1030.0
 margin_bottom = 607.0
 theme = SubResource( 1 )
 custom_styles/panel = SubResource( 2 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 177, 250 )
+frames = SubResource( 3 )
+animation = "optionidol"
+playing = true
+
+[node name="Panel2" type="Panel" parent="."]
+margin_left = 109.0
+margin_top = 401.0
+margin_right = 249.0
+margin_bottom = 441.0
+
+[node name="Label" type="Label" parent="."]
+margin_left = 567.0
+margin_top = 98.0
+margin_right = 946.0
+margin_bottom = 170.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 4 )
+text = "Credits"
+align = 1
+valign = 1
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 545.0
+margin_top = 193.0
+margin_right = 977.0
+margin_bottom = 409.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 5 )
+text = "Steven                             Jinhao"
+
+[node name="Button" type="Button" parent="."]
+margin_left = 161.0
+margin_top = 152.0
+margin_right = 361.0
+margin_bottom = 352.0
+rect_rotation = 179.859
+custom_styles/hover = SubResource( 6 )
+custom_styles/pressed = SubResource( 7 )
+custom_styles/normal = SubResource( 8 )
+icon = ExtResource( 23 )
+
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]

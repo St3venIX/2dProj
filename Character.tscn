@@ -1,4 +1,4 @@
-[gd_scene load_steps=128 format=2]
+[gd_scene load_steps=174 format=2]
 
 [ext_resource path="res://Character.gd" type="Script" id=1]
 [ext_resource path="res://idlepngs/frame_00_delay-0.1s.png" type="Texture" id=2]
@@ -37,7 +37,7 @@
 [ext_resource path="res://walkanim/frame_19_delay-0.1s.png" type="Texture" id=35]
 [ext_resource path="res://walkanim/frame_16_delay-0.1s.png" type="Texture" id=36]
 [ext_resource path="res://walkanim/frame_14_delay-0.1s.png" type="Texture" id=37]
-[ext_resource path="res://walkanim/frame_00_delay-0.1s.png" type="Texture" id=38]
+[ext_resource path="res://runleft/frame_24_delay-0.06s.png" type="Texture" id=38]
 [ext_resource path="res://walkanim/frame_01_delay-0.1s.png" type="Texture" id=39]
 [ext_resource path="res://walkanim/frame_04_delay-0.1s.png" type="Texture" id=40]
 [ext_resource path="res://walkanim/frame_03_delay-0.1s.png" type="Texture" id=41]
@@ -50,18 +50,18 @@
 [ext_resource path="res://runanim/frame_7_delay-0.06s.png" type="Texture" id=48]
 [ext_resource path="res://runanim/frame_6_delay-0.06s.png" type="Texture" id=49]
 [ext_resource path="res://runanim/frame_4_delay-0.06s.png" type="Texture" id=50]
-[ext_resource path="res://jumpanim/frame_00_delay-0.1s.png" type="Texture" id=51]
-[ext_resource path="res://jumpanim/frame_04_delay-0.1s.png" type="Texture" id=52]
+[ext_resource path="res://runleft/frame_01_delay-0.06s.png" type="Texture" id=51]
+[ext_resource path="res://runleft/frame_12_delay-0.06s.png" type="Texture" id=52]
 [ext_resource path="res://jumpanim/frame_10_delay-0.1s.png" type="Texture" id=53]
 [ext_resource path="res://jumpanim/frame_13_delay-0.1s.png" type="Texture" id=54]
 [ext_resource path="res://jumpanim/frame_15_delay-0.08s.png" type="Texture" id=55]
 [ext_resource path="res://jumpanim/frame_08_delay-0.1s.png" type="Texture" id=56]
 [ext_resource path="res://jumpanim/frame_06_delay-0.1s.png" type="Texture" id=57]
 [ext_resource path="res://jumpanim/frame_14_delay-0.08s.png" type="Texture" id=58]
-[ext_resource path="res://jumpanim/frame_01_delay-0.1s.png" type="Texture" id=59]
-[ext_resource path="res://jumpanim/frame_03_delay-0.1s.png" type="Texture" id=60]
+[ext_resource path="res://runleft/frame_25_delay-0.06s.png" type="Texture" id=59]
+[ext_resource path="res://runleft/frame_07_delay-0.06s.png" type="Texture" id=60]
 [ext_resource path="res://jumpanim/frame_09_delay-0.1s.png" type="Texture" id=61]
-[ext_resource path="res://jumpanim/frame_02_delay-0.1s.png" type="Texture" id=62]
+[ext_resource path="res://runleft/frame_26_delay-0.06s.png" type="Texture" id=62]
 [ext_resource path="res://jumpanim/frame_05_delay-0.1s.png" type="Texture" id=63]
 [ext_resource path="res://jumpanim/frame_11_delay-0.1s.png" type="Texture" id=64]
 [ext_resource path="res://jumpanim/frame_07_delay-0.1s.png" type="Texture" id=65]
@@ -125,6 +125,51 @@
 [ext_resource path="res://attackanim/frame_13_delay-0.06s.png" type="Texture" id=123]
 [ext_resource path="res://attackanim/frame_14_delay-0.06s.png" type="Texture" id=124]
 [ext_resource path="res://attackanim/frame_12_delay-0.06s.png" type="Texture" id=125]
+[ext_resource path="res://runleft/frame_27_delay-0.06s.png" type="Texture" id=126]
+[ext_resource path="res://runleft/frame_28_delay-0.06s.png" type="Texture" id=127]
+[ext_resource path="res://walkleft/frame_02_delay-0.1s.png" type="Texture" id=128]
+[ext_resource path="res://runleft/frame_30_delay-0.06s.png" type="Texture" id=129]
+[ext_resource path="res://runleft/frame_31_delay-0.06s.png" type="Texture" id=130]
+[ext_resource path="res://walkleft/frame_05_delay-0.1s.png" type="Texture" id=131]
+[ext_resource path="res://runleft/frame_04_delay-0.06s.png" type="Texture" id=132]
+[ext_resource path="res://runleft/frame_08_delay-0.06s.png" type="Texture" id=133]
+[ext_resource path="res://runleft/frame_29_delay-0.06s.png" type="Texture" id=134]
+[ext_resource path="res://walkleft/frame_10_delay-0.1s.png" type="Texture" id=135]
+[ext_resource path="res://runleft/frame_00_delay-0.07s.png" type="Texture" id=136]
+[ext_resource path="res://walkleft/frame_04_delay-0.1s.png" type="Texture" id=137]
+[ext_resource path="res://walkleft/frame_07_delay-0.1s.png" type="Texture" id=138]
+[ext_resource path="res://walkleft/frame_18_delay-0.1s.png" type="Texture" id=139]
+[ext_resource path="res://runleft/frame_02_delay-0.06s.png" type="Texture" id=140]
+[ext_resource path="res://runleft/frame_03_delay-0.06s.png" type="Texture" id=141]
+[ext_resource path="res://runleft/frame_10_delay-0.06s.png" type="Texture" id=142]
+[ext_resource path="res://walkleft/frame_11_delay-0.1s.png" type="Texture" id=143]
+[ext_resource path="res://walkleft/frame_12_delay-0.1s.png" type="Texture" id=144]
+[ext_resource path="res://walkleft/frame_14_delay-0.1s.png" type="Texture" id=145]
+[ext_resource path="res://walkleft/frame_16_delay-0.1s.png" type="Texture" id=146]
+[ext_resource path="res://walkleft/frame_17_delay-0.1s.png" type="Texture" id=147]
+[ext_resource path="res://runleft/frame_06_delay-0.06s.png" type="Texture" id=148]
+[ext_resource path="res://runleft/frame_05_delay-0.06s.png" type="Texture" id=149]
+[ext_resource path="res://walkleft/frame_01_delay-0.1s.png" type="Texture" id=150]
+[ext_resource path="res://runleft/frame_09_delay-0.06s.png" type="Texture" id=151]
+[ext_resource path="res://walkleft/frame_00_delay-0.1s.png" type="Texture" id=152]
+[ext_resource path="res://runleft/frame_11_delay-0.06s.png" type="Texture" id=153]
+[ext_resource path="res://runleft/frame_14_delay-0.06s.png" type="Texture" id=154]
+[ext_resource path="res://runleft/frame_15_delay-0.06s.png" type="Texture" id=155]
+[ext_resource path="res://walkleft/frame_03_delay-0.1s.png" type="Texture" id=156]
+[ext_resource path="res://walkleft/frame_09_delay-0.1s.png" type="Texture" id=157]
+[ext_resource path="res://runleft/frame_16_delay-0.06s.png" type="Texture" id=158]
+[ext_resource path="res://walkleft/frame_13_delay-0.1s.png" type="Texture" id=159]
+[ext_resource path="res://walkleft/frame_06_delay-0.1s.png" type="Texture" id=160]
+[ext_resource path="res://runleft/frame_17_delay-0.06s.png" type="Texture" id=161]
+[ext_resource path="res://runleft/frame_18_delay-0.06s.png" type="Texture" id=162]
+[ext_resource path="res://runleft/frame_19_delay-0.06s.png" type="Texture" id=163]
+[ext_resource path="res://runleft/frame_20_delay-0.06s.png" type="Texture" id=164]
+[ext_resource path="res://runleft/frame_13_delay-0.06s.png" type="Texture" id=165]
+[ext_resource path="res://runleft/frame_22_delay-0.06s.png" type="Texture" id=166]
+[ext_resource path="res://runleft/frame_23_delay-0.06s.png" type="Texture" id=167]
+[ext_resource path="res://walkleft/frame_08_delay-0.1s.png" type="Texture" id=168]
+[ext_resource path="res://walkleft/frame_15_delay-0.1s.png" type="Texture" id=169]
+[ext_resource path="res://runleft/frame_21_delay-0.06s.png" type="Texture" id=170]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 45, 77 )
@@ -141,7 +186,7 @@ animations = [ {
 "name": "block",
 "speed": 15.0
 }, {
-"frames": [ ExtResource( 110 ), ExtResource( 109 ), ExtResource( 99 ), ExtResource( 116 ) ],
+"frames": [ ExtResource( 116 ), ExtResource( 110 ), ExtResource( 109 ), ExtResource( 99 ) ],
 "loop": false,
 "name": "damage",
 "speed": 10.0
@@ -149,7 +194,7 @@ animations = [ {
 "frames": [ ExtResource( 70 ), ExtResource( 68 ), ExtResource( 71 ), ExtResource( 69 ), ExtResource( 67 ), ExtResource( 72 ), ExtResource( 73 ) ],
 "loop": true,
 "name": "dash",
-"speed": 15.0
+"speed": 10.0
 }, {
 "frames": [ ExtResource( 93 ), ExtResource( 106 ), ExtResource( 101 ), ExtResource( 117 ), ExtResource( 122 ), ExtResource( 104 ), ExtResource( 98 ), ExtResource( 121 ), ExtResource( 96 ), ExtResource( 97 ), ExtResource( 107 ), ExtResource( 118 ) ],
 "loop": true,
@@ -161,31 +206,53 @@ animations = [ {
 "name": "idle",
 "speed": 10.0
 }, {
-"frames": [ ExtResource( 51 ), ExtResource( 59 ), ExtResource( 62 ), ExtResource( 60 ), ExtResource( 52 ), ExtResource( 63 ), ExtResource( 57 ), ExtResource( 65 ), ExtResource( 56 ), ExtResource( 61 ), ExtResource( 53 ), ExtResource( 64 ), ExtResource( 66 ), ExtResource( 54 ), ExtResource( 58 ), ExtResource( 55 ) ],
+"frames": [ ExtResource( 63 ), ExtResource( 57 ), ExtResource( 65 ), ExtResource( 56 ), ExtResource( 61 ), ExtResource( 53 ), ExtResource( 64 ), ExtResource( 66 ), ExtResource( 54 ), ExtResource( 58 ), ExtResource( 55 ) ],
 "loop": true,
 "name": "jump",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 136 ), ExtResource( 51 ), ExtResource( 140 ), ExtResource( 141 ), ExtResource( 132 ), ExtResource( 149 ), ExtResource( 148 ), ExtResource( 60 ), ExtResource( 133 ), ExtResource( 151 ), ExtResource( 142 ), ExtResource( 153 ), ExtResource( 52 ), ExtResource( 165 ), ExtResource( 154 ), ExtResource( 155 ), ExtResource( 158 ), ExtResource( 161 ), ExtResource( 162 ), ExtResource( 163 ), ExtResource( 164 ), ExtResource( 170 ), ExtResource( 166 ), ExtResource( 167 ), ExtResource( 38 ), ExtResource( 59 ), ExtResource( 62 ), ExtResource( 126 ), ExtResource( 127 ), ExtResource( 134 ), ExtResource( 129 ), ExtResource( 130 ) ],
+"loop": true,
+"name": "leftrun",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 152 ), ExtResource( 150 ), ExtResource( 128 ), ExtResource( 156 ), ExtResource( 137 ), ExtResource( 131 ), ExtResource( 160 ), ExtResource( 138 ), ExtResource( 168 ), ExtResource( 157 ), ExtResource( 135 ), ExtResource( 143 ), ExtResource( 144 ), ExtResource( 159 ), ExtResource( 145 ), ExtResource( 169 ), ExtResource( 146 ), ExtResource( 147 ), ExtResource( 139 ) ],
+"loop": true,
+"name": "leftwalk",
 "speed": 15.0
 }, {
 "frames": [ ExtResource( 43 ), ExtResource( 46 ), ExtResource( 44 ), ExtResource( 47 ), ExtResource( 50 ), ExtResource( 45 ), ExtResource( 49 ), ExtResource( 48 ) ],
 "loop": true,
-"name": "run",
+"name": "rightrun",
 "speed": 15.0
 }, {
-"frames": [ ExtResource( 38 ), ExtResource( 39 ), ExtResource( 42 ), ExtResource( 41 ), ExtResource( 40 ), ExtResource( 30 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 22 ), ExtResource( 24 ), ExtResource( 31 ), ExtResource( 33 ), ExtResource( 26 ), ExtResource( 23 ), ExtResource( 37 ), ExtResource( 29 ), ExtResource( 36 ), ExtResource( 32 ), ExtResource( 25 ), ExtResource( 35 ), ExtResource( 34 ) ],
+"frames": [ ExtResource( 39 ), ExtResource( 42 ), ExtResource( 41 ), ExtResource( 40 ), ExtResource( 30 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 22 ), ExtResource( 24 ), ExtResource( 31 ), ExtResource( 33 ), ExtResource( 26 ), ExtResource( 23 ), ExtResource( 37 ), ExtResource( 29 ), ExtResource( 36 ), ExtResource( 32 ), ExtResource( 25 ), ExtResource( 35 ), ExtResource( 34 ) ],
 "loop": true,
 "name": "walk",
 "speed": 15.0
 } ]
 
-[node name="p1" type="Node2D"]
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 257.5, 10 )
+
+[node name="2d_player_platformer" type="KinematicBody2D"]
 script = ExtResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 513, 299 )
+position = Vector2( 520, 397 )
 shape = SubResource( 1 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-position = Vector2( 508, 222 )
+position = Vector2( 520, 326 )
 frames = SubResource( 2 )
-animation = "death"
+animation = "leftwalk"
 playing = true
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2( 519, 509 )
+shape = SubResource( 3 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 514, 295 )
+current = true
+smoothing_speed = 10.0
