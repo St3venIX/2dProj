@@ -1,0 +1,75 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://brackeys_platformer_assets/sprites/world_tileset.png" type="Texture" id=1]
+
+[node name="Node" type="Node"]
+
+[node name="Grass" type="Sprite" parent="."]
+position = Vector2( 119.141, 76.8516 )
+scale = Vector2( 3.60742, 3.64355 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 16, 16 )
+
+[node name="DirtyRock" type="Sprite" parent="."]
+position = Vector2( 437.641, 96.3516 )
+scale = Vector2( 3.41992, 3.33105 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 16, 0, 16, 16 )
+
+[node name="Dirt" type="Sprite" parent="."]
+position = Vector2( 117, 173 )
+scale = Vector2( 3.20996, 2.82178 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 16, 16, 16 )
+
+[node name="Blue" type="Sprite" parent="."]
+position = Vector2( 381, 294 )
+scale = Vector2( 3.41992, 3.33105 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 96, 0, 16, 16 )
+
+[node name="Cobblestone" type="Sprite" parent="."]
+position = Vector2( 692, 162 )
+scale = Vector2( 3.41993, 2.83105 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 128, 0, 16, 16 )
+
+[node name="Stone" type="Sprite" parent="."]
+position = Vector2( 131, 268 )
+scale = Vector2( 3.49121, 3.13427 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 96, 16, 16, 16 )
+
+[node name="Bridge" type="Sprite" parent="."]
+position = Vector2( 569.422, 359.852 )
+scale = Vector2( 3.14909, 3.76855 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 144, 0, 48, 16 )
+
+[node name="Tree" type="Sprite" parent="."]
+position = Vector2( 114.922, 483.406 )
+scale = Vector2( 3.00326, 3.0498 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 32, 64, 48, 64 )
+
+[node name="2Water" type="Sprite" parent="."]
+position = Vector2( 626.641, 496.203 )
+scale = Vector2( 4.54493, 3.5498 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 144, 16, 32 )
+
+[node name="1Water" type="Sprite" parent="."]
+position = Vector2( 448.641, 466.852 )
+scale = Vector2( 4.41992, 3.64355 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 80, 144, 16, 16 )

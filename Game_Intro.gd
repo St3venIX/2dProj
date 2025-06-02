@@ -19,7 +19,7 @@ func _ready():
 
 func _on_Button_pressed():
 	pass # Replace with function body.
-	get_tree().change_scene("res://World.tscn")
+	get_tree().change_scene("res://main.tscn")
 	
 
 func _on_Option_pressed():
