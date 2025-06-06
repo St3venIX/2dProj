@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/In the Refugee Camp - Xenoblade Chronicles_ Definitive Edition OST [050] [DE].mp3-1aef2343a5143bcdc3276021f7630246.mp3str"
+
+[deps]
+
+source_file="res://In the Refugee Camp - Xenoblade Chronicles_ Definitive Edition OST [050] [DE].mp3"
+dest_files=[ "res://.import/In the Refugee Camp - Xenoblade Chronicles_ Definitive Edition OST [050] [DE].mp3-1aef2343a5143bcdc3276021f7630246.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

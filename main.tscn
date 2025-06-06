@@ -1,11 +1,12 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://mcsub.tscn" type="PackedScene" id=1]
 [ext_resource path="res://MyTileSet.tres" type="TileSet" id=2]
 [ext_resource path="res://MyTileSet3.tres" type="TileSet" id=3]
 [ext_resource path="res://Killzone.tscn" type="PackedScene" id=4]
-[ext_resource path="res://Blue.png" type="Texture" id=5]
+[ext_resource path="res://pxArt.png" type="Texture" id=5]
 [ext_resource path="res://Slime.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Japanese Battle Music - Katana.mp3" type="AudioStream" id=7]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 1077, 10 )
@@ -13,17 +14,20 @@ extents = Vector2( 1077, 10 )
 [node name="Node2D" type="Node"]
 
 [node name="TextureRect" type="TextureRect" parent="."]
-margin_left = -2472.0
-margin_right = 2664.0
-margin_bottom = 600.0
+margin_left = -627.0
+margin_top = -152.0
+margin_right = 1907.0
+margin_bottom = 680.0
 texture = ExtResource( 5 )
 expand = true
-stretch_mode = 2
 
 [node name="Enemy" parent="." instance=ExtResource( 6 )]
 position = Vector2( 352, 392 )
 rotation = -0.0030857
 scale = Vector2( 3, 3 )
+
+[node name="CollisionShape2D" parent="Enemy/AnimatedSprite/Killzone" index="1"]
+disabled = true
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 2 )
@@ -35,6 +39,7 @@ position = Vector2( -456, -168 )
 rotation = -0.0030857
 
 [node name="TileMap2" type="TileMap" parent="."]
+position = Vector2( -6, -1 )
 tile_set = ExtResource( 3 )
 cell_size = Vector2( 16, 16 )
 show_collision = true
@@ -42,7 +47,13 @@ format = 1
 tile_data = PoolIntArray( 1572909, 1, 0, 1572911, 1, 0, 1572913, 1, 0, 1572915, 1, 0, 1572917, 1, 0, 1638415, 1, 0, 1638417, 1, 0, 1638419, 1, 0, 1638421, 1, 0, 1638423, 1, 0, 1769464, 1, 0, 1769466, 1, 0, 1769468, 1, 0, 1769470, 1, 0, 1703936, 1, 0, 1703938, 1, 0, 1703968, 1, 0, 1703970, 1, 0, 1703972, 1, 0, 1703974, 1, 0, 1703981, 1, 0, 1703983, 1, 0, 1703985, 1, 0, 1703987, 1, 0, 1703989, 1, 0, 1769487, 1, 0, 1769489, 1, 0, 1769491, 1, 0, 1769493, 1, 0, 1769495, 1, 0, 1900536, 1, 0, 1900538, 1, 0, 1900540, 1, 0, 1900542, 1, 0, 1835008, 1, 0, 1835010, 1, 0, 1835040, 1, 0, 1835042, 1, 0, 1835044, 1, 0, 1835046, 1, 0, 2031608, 1, 0, 2031610, 1, 0, 2031612, 1, 0, 2031614, 1, 0, 1966080, 1, 0, 1966082, 1, 0, 2162680, 1, 0, 2162682, 1, 0, 2162684, 1, 0, 2162686, 1, 0, 2097152, 1, 0, 2097154, 1, 0 )
 
 [node name="Killzone" parent="." instance=ExtResource( 4 )]
+position = Vector2( 312, 92 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
 position = Vector2( 568, 608 )
 shape = SubResource( 1 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+
+[editable path="Enemy"]
